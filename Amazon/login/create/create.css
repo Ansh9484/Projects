@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    font-family: arial;
+     
+}
+body{
+    background-color:#ccccccfb;
+}
+.header1{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amazon-logo{
+    height:120px;
+    width: 150px;
+    margin-top: 50px; 
+    margin-right: 40px;
+}
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    object-fit: cover; 
+    height:60px;
+    width: 140px;
+    margin-left: 30px;    
+}
+
+/*box2*/
+.hero-box{
+    display:flex;
+    justify-content: center;
+
+}
+.login-box{
+    height: 720px;
+    width: 350px;
+    border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 8px;   
+}
+.login-had{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+.sign-in{
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+/*name box*/
+.name{
+    margin-top: 15px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+input{
+    height: 31px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.disp{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+i{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.disp p{
+    font-size: 14px;
+}
+.pass{
+    margin-top: 40px;
+    margin-left: 15px;
+}
+.button2{
+    height: 40px;
+    width:  95%;
+    margin: 25px 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background-color: #febd68; 
+    cursor: pointer; 
+}
+.button2:hover{
+    border: 3px solid yellow;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+hr{
+    width: 90%;
+}
+.footer-con{
+    margin: 15px;
+}
+a{
+    color: #007185;
+}

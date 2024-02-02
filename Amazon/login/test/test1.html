@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Counter Example</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+   <span id="Counter">0</span>
+   <button id="increment" onclick="increment();">increment</button>
+   <button id="decrement" onclick="decrement();">decrement</button>
+   <button id="reset" onclick="reset();">reset</button>
+</body>
+<script>
+    alert("hello");
+    document.write("hello");
+
+    const counter = document.getElementById("counter");
+    const incr = document.getElementById("increment");
+    const decr = document.getElementById("decrement");
+    const reset = document.getElementById("reset");
+ 
+    let a=0;
+    function recall(){
+   counter.textContent = a;
+    }
+
+    function increment(){
+    a++;
+    recall();
+    }
+
+    function decrement(){
+
+   a--;
+   recall();
+    }
+
+    function reset(){
+
+    a=0;
+    recall();
+    }
+
+    recall();
+  </script>
+</html>

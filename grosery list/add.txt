@@ -1,0 +1,41 @@
+const btn = document.querySelector('.btn');
+const mainbox = document.querySelector('.display');
+let clutter = '';
+let arr = [];
+let ai = 0;
+let a=0;
+btn.addEventListener('click',add)
+function add(){
+     const input = document.querySelector('input').value;
+     if(input == '')
+     {
+        alert("Enter Data");
+        return
+     }
+     else{
+        arr[ai] = input; 
+        dis();
+        ai++;
+     }
+}
+function dis(){
+    a++;
+    for(var i=0; i<1; i++){
+        clutter += `<div class="cont">
+                    <p>${a}.${arr[ai]}</p><i class="fa-solid fa-xmark"></i>
+                    </div>`
+    }
+    console.log(clutter);
+    mainbox.innerHTML = clutter;
+    addDeleteEventListeners();
+}
+function addDeleteEventListeners() {
+    const deleteIcons = document.querySelectorAll('.delete-icon');
+    deleteIcons.forEach(icon => {
+      icon.addEventListener('click', function () {
+        const index = parseInt(icon.dataset.index);
+        arr.splice(index, 1);
+        dis();
+      });
+    });
+  }

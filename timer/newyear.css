@@ -1,0 +1,66 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white
+}
+.container{
+    height: 100%;
+    width: 100%;
+}
+.container video{
+    height: 120vh;
+    width: 100%;
+    position: absolute;
+    opacity: 0.5;
+}
+::-webkit-scrollbar{
+    display:  none;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}
+.head{
+    font-family: cursive;
+    position: relative;
+    font-size: 10vh;
+    top: 10vh;
+    opacity: 0.8;
+    transition: 0.8s;
+}
+.boxes{
+    position: absolute;
+    top: 40vh;
+    height: 20vh;
+    width: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    100% {top: -10vh;}
+}
+.box{
+    position: relative;
+    height: 20vh;
+    width: 20vh;
+    background-color: white;
+    display: flex;
+    opacity: 0.8;
+    border-radius: 2vh;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.dot{
+    position: relative;
+}
+.h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 10vh;
+    word-spacing: 1vh;
+}

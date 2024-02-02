@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Registation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="create.css">
+    <script src="create.js"></script>
+</head>
+
+<body>
+   
+    <header>
+        <div class="header1">
+            <div class="amazon-logo">
+                <div class="logo"></div>
+            </div>
+        </div>
+    </header>
+    <!--hero-->
+    <div class="hero-box">
+        <div class="login-box">
+            <div class="login-had">
+                <p class="sign-in">Create Account</p>
+            </div>
+            <form action="data.php" method="POST">
+                <p class="name">Your name</p>
+                <input type="text" class="input" placeholder="Full name" id="name" name="name">
+                <p class="name">Mobile number</p>
+                <input type="number" class="number" placeholder="Mobile Number" id="mobile" name="mobile">
+                <p class="name">password</p>
+                <input type="password" class="password" placeholder="password" id="password" name="password">
+                
+            </form>
+            <div class="disp">
+                <i class="fa-solid fa-info fa-xs"></i>
+                <p>password must be at leset 6 character</p>
+            </div>
+            <p class="pass">By enrolling your mobile phone number, you consent to receive automated security notifications via text message from Amazon. Message and data rates may apply.</p>
+            <div class="createbox">
+                <div class="create">
+                    <button class="button2" type="SUBMIT" onclick="submitdata();">Continue</button>
+                    </a>
+                </div>
+            </div>
+            <div class="footer">
+                <hr>
+            </div>
+            <p class="footer-con">Alrady have an account? <a>Sign in</a></p>
+            <p class="footer-con">Buying for work? <a>Create a free business account</a></p>
+            <p class="footer-con">By creating an account or logging in, you agree to Amazon’s <a> Conditions of Use</a>and <a>  Privacy Policy.</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>
