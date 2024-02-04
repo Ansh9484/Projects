@@ -1,4 +1,4 @@
-const end = "31 December 2024 11:38 PM";
+const end = "31 December 2024 11:59 PM";
 const h1 = document.querySelectorAll('.h1');
 const vido = document.querySelector('.video');
 const box = document.querySelectorAll('.box');
